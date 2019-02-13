@@ -35,7 +35,7 @@ def transform(data,filename):
                 break
     return flag
 
-list_Dir = '/home/zhangch/Desktop/test1/' 
+list_Dir = '/home/zhangch/RSS/source_data/' 
 
 if __name__ == '__main__':
     pathDir =  os.listdir(list_Dir)

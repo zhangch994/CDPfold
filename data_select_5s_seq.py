@@ -21,16 +21,14 @@ def readfile(path_dir,file):
         data.append(item)
     return data,file
 
-path_dir = "/home/zhangch/Desktop/test1/"
-save_dir = "/home/zhangch/RSS/tRNA/source_data/"
+path_dir = "/home/zhangch/RSS/seq_data/"
+save_dir = "/home/zhangch/RSS/5s_seq/"
 if __name__ == "__main__":
     path = pathDir =  os.listdir(path_dir)
     df = pd.DataFrame()
     max_data = 0
     for i in pathDir:
         if i.endswith(".ct"):
-            #data,filename = readfile(path_dir , i)
-            #if len(data) >= 100 and len(data)<200:
-            if i.startswith("tRNA"):
+            if i.startswith("5s"):
                  shutil.copyfile(path_dir + i , save_dir + i)
 

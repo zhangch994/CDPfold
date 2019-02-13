@@ -20,12 +20,12 @@ if __name__ == "__main__":
         else:
             label_2_num = label_2_num + 1
             filepointlist.append(i)
-    """
+    
     y = list(range(len(filepointlist)))
     slice = random.sample(y,label_2_num - label_0_num)
     for i in range(label_2_num - label_0_num):
         shutil.copyfile(pathDir + filepointlist[slice[i]] , pathDir2 + filepointlist[slice[i]])
         os.remove(pathDir + filepointlist[slice[i]])
-    """
+    
     
             

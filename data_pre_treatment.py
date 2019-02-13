@@ -53,9 +53,9 @@ def savefile(rnaseq,rnastructure,filename):
     for i in range(m):
         seqwriter.writerow(rnaseq[i])
         
-list_Dir = '/home/zhangch/RSS/srp/source_data/' 
-csv_Dir = '/home/zhangch/RSS/srp/stru_data/' 
-seq_Dir = '/home/zhangch/RSS/srp/seq_data/' 
+list_Dir = '/home/zhangch/RSS/source_data/' 
+csv_Dir = '/home/zhangch/RSS/stru_data/' 
+seq_Dir = '/home/zhangch/RSS/seq_data/' 
    
 if __name__ == '__main__':
     pathDir =  os.listdir(list_Dir)
