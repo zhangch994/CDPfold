@@ -1,0 +1,31 @@
+rm -rf /home/zhangch/RSS/train_labelpng
+mkdir /home/zhangch/RSS/train_labelpng
+rm -rf /home/zhangch/RSS/training_set
+mkdir /home/zhangch/RSS/training_set
+rm -rf /home/zhangch/RSS/validation_set
+mkdir /home/zhangch/RSS/validation_set
+rm -rf /home/zhangch/RSS/training_set_standardzing
+mkdir /home/zhangch/RSS/training_set_standardzing
+rm -rf /home/zhangch/RSS/validation_set_standardzing
+mkdir /home/zhangch/RSS/validation_set_standardzing
+
+python train_to_labelpng.py
+python make_training_data.py
+python make_validation_data.py
+python training_data_standardzing.py
+python validation_data_standardzing.py
+
+rm -rf /home/zhangch/RSS/log
+mkdir /home/zhangch/RSS/log
+python trainning.py
+python validation.py >> result.txt
+
+rm -rf /home/zhangch/RSS/log
+mkdir /home/zhangch/RSS/log
+python trainning.py
+python validation.py >> result.txt
+
+rm -rf /home/zhangch/RSS/log
+mkdir /home/zhangch/RSS/log
+python trainning.py
+python validation.py >> result.txt
