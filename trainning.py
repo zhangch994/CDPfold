@@ -17,7 +17,7 @@ IMG_W = 128
 IMG_H = 19
 BATCH_SIZE = 256
 CAPACITY = 1000
-MAX_STEP = 20001
+MAX_STEP = 4001
 learning_rate = 0.01
 
 def run_training():
